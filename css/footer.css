@@ -1,0 +1,39 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+
+  padding-top: 50px;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer .container {
+  justify-items: center;
+  margin-left: 10%;
+}
+
+.footer span {
+  color: #525252;
+  align-self: flex-start;
+
+  width: 100%;
+}
+
+.footer-txt {
+  font-size: 1.125rem;
+}
+
+.footer-contact {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+@media (max-width:800px) {
+  .footer .container {
+    justify-items: start;
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,185 @@
+.education {
+  background-color: #141414;
+  color: #ffffff;
+
+ padding: 50px 0;
+}
+
+.education .subtitle {
+  color: #000000;
+
+  grid-row: 1/4;
+
+  max-width: 5ch;
+}
+
+.education-txt {
+  color: #8f8f8f;
+
+  font-size: 1.5rem;
+  line-height: 1.4;
+  word-break: break-all;
+
+  max-width: 40ch;
+
+  margin-bottom: 30px;
+}
+
+.education-txt strong {
+  color: #ffffff;
+}
+
+.college-list {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  gap: 20px;
+}
+
+.college {
+  flex: 1;
+  background-color: #000000;
+
+  border-radius: 5px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.college::before {
+  content: '';
+  position: absolute;
+
+  left: -5px;
+  top: 40px;
+
+  width: 5px;
+  height: 30px;
+
+  background: linear-gradient(#b6f829, #67dd0a);
+}
+
+.college-type {
+  margin-bottom: 10px;
+
+  color: #8f8f8f;
+
+  font-size: .880rem;
+}
+
+.college-course {
+  flex: 1;
+
+  margin-bottom: 30px;
+
+  font-size: 1.125rem;
+}
+
+.college-location {
+
+  color: #8f8f8f;
+  font-size: 1rem;
+}
+
+.education-extra {
+  margin: 30px 0 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.education-extra h3 {
+  font-size: .880rem;
+
+  color: #8f8f8f;
+
+  margin-bottom: 20px;
+}
+
+.education-extra span {
+  color: #8f8f8f;
+}
+
+
+.course {
+  position: relative;
+}
+
+.course li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  left: -30px;
+  top: -5px;
+
+  width: 24px;
+  height: 24px;
+
+  background: url(../img/cursos.svg) no-repeat center;
+}
+
+.language {
+  position: relative;
+}
+
+.language::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  left: -30px;
+  top: -5px;
+
+  width: 24px;
+  height: 24px;
+
+  background: url(../img/idiomas.svg) no-repeat center;
+}
+
+
+
+@media (max-width: 1000px) {
+  .education-txt {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .education-txt {
+    text-align: center;
+
+    max-width: 80ch;
+  }
+
+  .education .subtitle {
+    grid-row: 1;
+    color: #ffffff;
+    max-width: 15ch;
+  }
+}
+
+
+  @media (max-width: 500px) {
+    .education-txt {
+      text-align: left;
+
+      max-width: 39.1ch;
+
+      font-size: 1.1rem;
+    }
+
+  }
